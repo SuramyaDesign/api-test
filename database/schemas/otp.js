@@ -1,4 +1,4 @@
-var { sequelize, DataTypes } = require('../db')
+import { sequelize, DataTypes } from '../db';
 
 var OTPDb = sequelize.define('otp_token', {
     id: {

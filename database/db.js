@@ -1,4 +1,5 @@
-const { Sequelize, DataTypes, Model } = require('sequelize');
+import { Sequelize, DataTypes, Model } from 'sequelize';
+import mariadb from 'mariadb';
 
 const DB_NAME = process.env.dbName
 const DB_USER = process.env.dbUser
@@ -11,6 +12,7 @@ try {
     sequelize = new Sequelize(DB_NAME, DB_USER, DB_PASSWORD, {
         host: DB_HOST, 
         dialect: 'mariadb', 
+        dialectModule: mariadb,
         logging: false, 
         pool: {
             max: 15,
