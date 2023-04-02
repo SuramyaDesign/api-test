@@ -1,0 +1,25 @@
+{
+  "name": "qbr",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "jsonwebtoken": "^9.0.0",
+    "mariadb": "^3.1.1",
+    "mysql2": "^3.2.0",
+    "next": "13.2.4",
+    "next-cookies": "^2.0.3",
+    "nodemailer": "^6.9.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sequelize": "^6.30.0",
+    "validator": "^13.9.0"
+  }
+}
